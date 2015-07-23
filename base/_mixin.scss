@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+//float
+@mixin float($float:left){
+  float: $float;
+}
+%float{
+  @include float;
+}
+
+//display
+@mixin display($display:block){
+  display: $display;
+}
+%display{
+  @include display;
+}
+
+//ovh
+%ovh{
+  overflow: hidden;
+}
+
+//clear
+%clear{
+  &:after{
+    clear: both;
+    @extend %display;
+    height: 0;
+    content: "";
+  }
+}
+
+//text-align
+%txa-l{
+  text-align: left;
+}
+%txa-c{
+  text-align: center;
+}
+%txa-r{
+  text-align: right;
+}
