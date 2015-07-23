@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+//图片显示效果
+.hover-scale{
+  @extend %ovh;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  &:hover{
+    img{
+      -webkit-transform: scale(1.4,1.4);
+      transform: scale(1.4,1.4);
+    }
+  }
+}
