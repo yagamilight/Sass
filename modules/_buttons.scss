@@ -9,6 +9,7 @@
 }
 
 //两个参数分别是上下内边距和左右内边距
-@mixin btn-size($t-and-b,$l-and-r){
+@mixin btn-size($t-and-b,$l-and-r,$radius:0){
   padding: $t-and-b $l-and-r;
+  border-radius: $radius;
 }
